@@ -7,8 +7,8 @@ print("I am thinking of a number between 1 and 20.")
 def guess():
 	global guessv
 	try:
-		guessv = int(input("Take a guess: \n"))
-		return guessv
+			guessv = int(input("Take a guess: \n"))
+			return guessv
 	except ValueError:
 		print("Invalid Input")
 guess()
