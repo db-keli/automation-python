@@ -19,5 +19,6 @@ for i in range(9):
         turn = 'O'
     else:
         turn = 'X'
+
 printBoard(theboard)
     
