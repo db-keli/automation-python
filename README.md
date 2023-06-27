@@ -12,10 +12,10 @@
 ```>>> spam = 'Say hi to Bob\'s mother.'```
 <br>Python knows that since the single quote in Bob\'s has a backslash, it is not a single quote meant to end the string value. The escape characters \' and \" let you put single quotes and double quotes inside your strings, respectively.<br>
 
-*Escape Character*        *Prints*
-\' ---------------------   Single quote<br>
-\" ---------------------   Double quote<br>
-\t ---------------------   Tab<br>
-\n ---------------------   Newline (line break)<br>
-\\\\ -------------------   Backslash<br>
+*Escape Character* ------ *Prints*<br>
+\'-------------------------Single quote<br>
+\"-------------------------Double quote<br>
+\t-------------------------Tab<br>
+\n-------------------------Newline (line break)<br>
+\\\\-----------------------Backslash<br>
 
