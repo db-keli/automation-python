@@ -19,3 +19,14 @@
 \n-------------------------Newline (line break)<br>
 \\\\-----------------------Backslash<br>
 
+### Raw Strings
+You can place an r before the beginning quotation mark of a string to make
+it a raw string. A raw string completely ignores all escape characters and
+prints any backslash that appears in the string. For example, type the fol-
+lowing into the interactive shell:<br>
+```>>> print(r'That is Carol\'s cat.')``` <br>
+```That is Carol\'s cat.``` <br>
+Because this is a raw string, Python considers the backslash as part of
+the string and not as the start of an escape character. Raw strings are help
+ful if you are typing string values that contain many backslashes, such as the
+strings used for regular expressions described in the next chapter. <br>
