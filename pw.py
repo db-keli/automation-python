@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 # pw.py - An insecure password locker program
 
 PASSWORDS = {'email': 'F7minlBDDuvMJuxESSKHFhTxFtjVB6',
@@ -17,4 +17,4 @@ if account in PASSWORDS:
     pyperclip.copy(PASSWORDS[account])
     print('Password for '+account+' copied to clipboard.')
 else:
-    print('There is no account named' + account)
+    print('There is no account named ' + account)
