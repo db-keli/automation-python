@@ -17,4 +17,4 @@ if account in PASSWORDS:
     pyperclip.copy(PASSWORDS[account])
     print('Password for '+account+' copied to clipboard.')
 else:
-    print('There is no account named ' + account)
+    print('There is no account called ' + account)
