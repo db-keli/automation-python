@@ -28,5 +28,4 @@ lowing into the interactive shell:<br>
 ```That is Carol\'s cat.``` <br>
 Because this is a raw string, Python considers the backslash as part of
 the string and not as the start of an escape character. Raw strings are help
-ful if you are typing string values that contain many backslashes, such as the
-strings used for regular expressions described in the next chapter. <br>
+ful if you are typing string values that contain many backslashes. <br>
