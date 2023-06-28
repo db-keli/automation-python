@@ -29,3 +29,13 @@ lowing into the interactive shell:<br>
 Because this is a raw string, Python considers the backslash as part of
 the string and not as the start of an escape character. Raw strings are help
 ful if you are typing string values that contain many backslashes. <br>
+
+### Useful String Methods
+*upper()*<br>
+```Returns a new string where all the letters in the original string have been converted to uppercase```<br
+*lower()*<br>
+```Returns a new string where all the letters in the original string have been converted to lowercase```<br>
+*isupper()*<br>
+*islower()*<br>
+```Returns a boolean value where the string is upper or lower respectively```<br>
+
