@@ -35,9 +35,9 @@ ful if you are typing string values that contain many backslashes. <br>
 * *lower()*<br>```Returns a new string where all the letters in the original string have been converted to lowercase```
 * *isupper()*
 * *islower()*<br> ```Returns a boolean value where the string is upper or lower respectively```
-* *isalpha()* returns true if string consists only of letters and is not blank
-* *isalnum()* returns true if string consists only of letter and numbers and is not blank
-* *isdecimal()* returns true if string consists only of numeric characters and is not blank
-* *isspace()* returns true if string consists only of spaces, tabs and new lines and is not blank 
-* *istitle()* returns true if string consists only of words that begin with uppercase letters followed by lowercase letters.
+* *isalpha()* <br> ```returns true if string consists only of letters and is not blank```
+* *isalnum()* <br> ```returns true if string consists only of letter and numbers and is not blank```
+* *isdecimal()* <br> ```returns true if string consists only of numeric characters and is not blank```
+* *isspace()* <br> ```returns true if string consists only of spaces, tabs and new lines and is not blank```
+* *istitle()* <br> ```returns true if string consists only of words that begin with uppercase letters followed by lowercase letters.```
 
