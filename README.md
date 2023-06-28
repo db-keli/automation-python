@@ -32,7 +32,7 @@ ful if you are typing string values that contain many backslashes. <br>
 
 ### Useful String Methods
 *upper()*<br>
-```Returns a new string where all the letters in the original string have been converted to uppercase```<br
+```Returns a new string where all the letters in the original string have been converted to uppercase```<br>
 *lower()*<br>
 ```Returns a new string where all the letters in the original string have been converted to lowercase```<br>
 *isupper()*<br>
