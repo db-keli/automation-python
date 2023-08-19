@@ -20,3 +20,9 @@ baconfile.close()
 baconfile = open('bacon.txt')
 content = baconfile.read()
 print(content)
+
+loaded_file = open('another.txt', 'w')
+into_file = "Revising this shit"
+loaded_file.write(loaded_file)
+loaded_file.close()
+
