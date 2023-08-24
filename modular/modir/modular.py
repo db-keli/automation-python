@@ -39,11 +39,20 @@ class Student:
         first, last, pay = emp_str.split('-')
         return cls(first, last, pay)
 
+    @classmethod
+    def work_days(cls, days):
+        cls.workdays = days
+
     @staticmethod
     def is_workday(day):
         if day.weekday() == 5 or day.weekday() == 6:
             return False
         return True
+
+    @staticmethod
+    def expense(days):
+        if days < 1000:
+            return True
 
 
 class Developer(Student):
@@ -67,4 +76,3 @@ class Manager(Student):
     def print_std(self):
         for s in self.students:
             print('-->', s)
-
