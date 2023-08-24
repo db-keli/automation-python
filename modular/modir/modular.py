@@ -68,24 +68,3 @@ class Manager(Student):
         for s in self.students:
             print('-->', s)
 
-
-# std1 = Student.string_sep('Mike-Names-600')
-# dev = Developer('Mike', 'Billion', 7000, 'python')
-# man = Manager('sue', 'Smith', 7000, [dev])
-
-# man.print_std()
-# print(dev.email)
-# dev.apply_raise()
-# print(dev.pay)
-# print(dev.language)
-# Student.set_raise_amount(89)
-# print(std1.last)
-# print(std1.first)
-# print(std1.email)
-# print(std1.fullname())
-# print(std1.apply_raise())
-# print(std1.raise_amt)
-# print(Student.fullname(std1))
-# print(isinstance(Developer, Student))
-# print(std1.__repr__())
-# print(std1.__str__())
