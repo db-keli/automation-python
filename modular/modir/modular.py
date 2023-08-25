@@ -76,5 +76,3 @@ class Manager(Student):
     def print_std(self):
         for s in self.students:
             print('-->', s)
-
-from requests import ge

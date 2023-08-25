@@ -16,6 +16,4 @@ manager.print_std()
 dev = Developer('Miss', 'Joyce', 7_302_002, 'Python')
 Developer.set_raise_amount(78788)
 print(dev.apply_raise())
-
-
 print("That's awesome") if student.work_days else ''
