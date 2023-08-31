@@ -9,3 +9,4 @@ else:
     address = paste()
 
 wb.open(f'https://www.google.com/maps/place/{address}')
+
