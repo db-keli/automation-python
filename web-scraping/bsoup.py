@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 import requests
-import bs4
-
+from bs4 import BeautifulSoup
 req = requests.get('http://nostarch.com')
-print(req.raise_for_status())
-noStarchSoup = bs4.BeautifulSoup(req.text)
-print(type(noStarchSoup))
+
+with req as req:
+    noStarchSoup = BeautifulSoup(req.text, 'lxml')
+
+print(noStarchSoup)
+tag = noStarchSoup.b
+print(tag.name)
+
+with open('index.html', 'w') as f:
+    f.write(noStarchSoup.prettify())
