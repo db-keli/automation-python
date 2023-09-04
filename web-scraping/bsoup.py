@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 import requests
 from bs4 import BeautifulSoup
-req = requests.get('http://nostarch.com')
 
-with req as req:
-    noStarchSoup = BeautifulSoup(req.text, 'lxml')
+# req = requests.get('simple.html')
 
-print(noStarchSoup)
-tag = noStarchSoup.b
-print(tag.name)
+with open('simple.html') as file:
+    Soup = BeautifulSoup(file, 'lxml')
 
-with open('index.html', 'w') as f:
-    f.write(noStarchSoup.prettify())
+link = []
+for a in Soup.find_all('div'):
+    link.append(a)
+
+print(link[0])

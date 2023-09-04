@@ -5,3 +5,4 @@ __pycache__/
 ./modular/.idea/*
 ./modular/venv/*
 ./modular/__pycache__/*
+.html
