@@ -1,3 +1,5 @@
+import pprint
+
 class Student:
     raise_amount = 104
     num_of_emp = 0
@@ -76,3 +78,19 @@ class Manager(Student):
     def print_std(self):
         for s in self.students:
             print('-->', s)
+
+
+class Boss(Student):
+    def __init__(self, first, last, pay, students=None):
+        super().__init__(first, last, pay)
+        if students is None:
+            self.students = []
+        else:
+            self.students = students
+
+    def bio(self, name):
+        if name not in self.students:
+            self.students.append(self)
+
+
+
