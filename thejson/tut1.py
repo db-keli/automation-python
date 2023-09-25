@@ -1,6 +1,6 @@
 import json
 
-stringsOfJsonData = '{"Name": "Kofi", "Age": "21", "Occupation": "CTO"}'
+stringsOfJsonData = '{"Name": "Kofi", "Age": 21, "Occupation": null}'
 
 jsonAsPythonValue = json.loads(stringsOfJsonData)  # Expects stringed data
 print(jsonAsPythonValue)
