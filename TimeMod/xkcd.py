@@ -12,11 +12,11 @@ os.makedirs('xkcd', exist_ok=True)
 
 def downloadxkcd(startcomic, endcomic):
     for urlNumber in range(startcomic, endcomic):
-        print('Downloading page https://xkcd.com/%s...' % urlNumber)
-        res = requests.get('https://xkcd.com/%s' % urlNumber)
+        print('Downloading page http://xkcd.com/%s...' % urlNumber)
+        res = requests.get('http://xkcd.com/%s' % urlNumber, 'lxml')
         res.raise_for_status()
 
-        soup = bs4.BeautifulSoup(res.text)
+        soup = bs4.BeautifulSoup(res.text, 'lxml')
 
         comic_elem = soup.select('#comic img')
 
@@ -36,15 +36,15 @@ def downloadxkcd(startcomic, endcomic):
             for chunk in res.iter_content(100000):
                 image.write(chunk)
             image.close()
+            
+downloadxkcd(1, 2)
+# download_threads = []
+# for i in range(0, 1400, 100):
+#     download_thread = threading.Thread(target=downloadxkcd, args=(i, i+99))
+#     download_threads.append(download_thread)
+#     download_thread.start()
 
-
-download_threads = []
-for i in range(0, 1400, 100):
-    download_thread = threading.Thread(target=downloadxkcd, args=(i, i+99))
-    download_threads.append(download_thread)
-    download_thread.start()
-
-for download_thread in download_threads:
-    download_thread.join()
+# for download_thread in download_threads:
+#     download_thread.join()
 
 print('Done')

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 theboard = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ', 
             'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' ',
             'low-L': ' ', 'low-M': ' ', 'low-R': ' '}
@@ -21,4 +22,3 @@ for i in range(9):
         turn = 'X'
 
 printBoard(theboard)
-    
