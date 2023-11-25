@@ -38,13 +38,13 @@ def downloadxkcd(startcomic, endcomic):
             image.close()
             
 downloadxkcd(1, 2)
-# download_threads = []
-# for i in range(0, 1400, 100):
-#     download_thread = threading.Thread(target=downloadxkcd, args=(i, i+99))
-#     download_threads.append(download_thread)
-#     download_thread.start()
+download_threads = []
+for i in range(0, 1400, 100):
+    download_thread = threading.Thread(target=downloadxkcd, args=(i, i+99))
+    download_threads.append(download_thread)
+    download_thread.start()
 
-# for download_thread in download_threads:
-#     download_thread.join()
+for download_thread in download_threads:
+    download_thread.join()
 
 print('Done')
